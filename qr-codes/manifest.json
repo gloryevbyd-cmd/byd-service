@@ -1,0 +1,29 @@
+{
+  "publicBaseUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main",
+  "services": [
+    {
+      "id": "byd-cranbourne-service",
+      "title": "BYD Cranbourne Service",
+      "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/cranbourne.png",
+      "imagePath": "/i/cranbourne.png",
+      "qrSvgPath": "/byd_service_qr_codes/byd-cranbourne-service-qr.svg",
+      "qrPngPath": "/byd_service_qr_codes/byd-cranbourne-service-qr.png"
+    },
+    {
+      "id": "byd-pakenham-service",
+      "title": "BYD Pakenham Service",
+      "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/pakenham.png",
+      "imagePath": "/i/pakenham.png",
+      "qrSvgPath": "/byd_service_qr_codes/byd-pakenham-service-qr.svg",
+      "qrPngPath": "/byd_service_qr_codes/byd-pakenham-service-qr.png"
+    },
+    {
+      "id": "byd-ringwood-service",
+      "title": "BYD Ringwood Service",
+      "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/ringwood.png",
+      "imagePath": "/i/ringwood.png",
+      "qrSvgPath": "/byd_service_qr_codes/byd-ringwood-service-qr.svg",
+      "qrPngPath": "/byd_service_qr_codes/byd-ringwood-service-qr.png"
+    }
+  ]
+}
