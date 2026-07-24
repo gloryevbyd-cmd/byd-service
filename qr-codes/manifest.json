@@ -6,24 +6,32 @@
       "title": "BYD Cranbourne Service",
       "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/cranbourne.png",
       "imagePath": "/i/cranbourne.png",
-      "qrSvgPath": "/byd_service_qr_codes/byd-cranbourne-service-qr.svg",
-      "qrPngPath": "/byd_service_qr_codes/byd-cranbourne-service-qr.png"
+      "qrSvgPath": "/qr-codes/byd-cranbourne-service-qr.svg",
+      "qrPngPath": "/qr-codes/byd-cranbourne-service-qr.png"
     },
     {
       "id": "byd-pakenham-service",
       "title": "BYD Pakenham Service",
       "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/pakenham.png",
       "imagePath": "/i/pakenham.png",
-      "qrSvgPath": "/byd_service_qr_codes/byd-pakenham-service-qr.svg",
-      "qrPngPath": "/byd_service_qr_codes/byd-pakenham-service-qr.png"
+      "qrSvgPath": "/qr-codes/byd-pakenham-service-qr.svg",
+      "qrPngPath": "/qr-codes/byd-pakenham-service-qr.png"
     },
     {
       "id": "byd-ringwood-service",
       "title": "BYD Ringwood Service",
       "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/ringwood.png",
       "imagePath": "/i/ringwood.png",
-      "qrSvgPath": "/byd_service_qr_codes/byd-ringwood-service-qr.svg",
-      "qrPngPath": "/byd_service_qr_codes/byd-ringwood-service-qr.png"
+      "qrSvgPath": "/qr-codes/byd-ringwood-service-qr.svg",
+      "qrPngPath": "/qr-codes/byd-ringwood-service-qr.png"
+    },
+    {
+      "id": "byd-bayswater-service",
+      "title": "BYD Bayswater Service (Panel and Parts)",
+      "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/bayswater.png",
+      "imagePath": "/i/bayswater.png",
+      "qrSvgPath": "/qr-codes/byd-bayswater-service-qr.svg",
+      "qrPngPath": "/qr-codes/byd-bayswater-service-qr.png"
     }
   ]
 }
