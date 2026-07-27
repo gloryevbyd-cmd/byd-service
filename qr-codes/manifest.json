@@ -1,5 +1,14 @@
 {
   "publicBaseUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main",
+  "websites": [
+    {
+      "id": "rental-gloryevgroup-homepage",
+      "title": "Rental website homepage",
+      "targetUrl": "https://rental.gloryevgroup.com.au/",
+      "qrSvgPath": "/qr-codes/rental-gloryevgroup-homepage-qr.svg",
+      "qrPngPath": "/qr-codes/rental-gloryevgroup-homepage-qr.png"
+    }
+  ],
   "services": [
     {
       "id": "byd-cranbourne-service",

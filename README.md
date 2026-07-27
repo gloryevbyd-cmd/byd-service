@@ -13,6 +13,12 @@ This public repository hosts BYD service-card images and static QR codes for sca
 
 ## QR code files
 
+| Website | PNG | SVG |
+| --- | --- | --- |
+| Rental website homepage | `qr-codes/rental-gloryevgroup-homepage-qr.png` | `qr-codes/rental-gloryevgroup-homepage-qr.svg` |
+
+## Service QR code files
+
 | Service | PNG | SVG |
 | --- | --- | --- |
 | BYD Cranbourne Service | `qr-codes/byd-cranbourne-service-qr.png` | `qr-codes/byd-cranbourne-service-qr.svg` |
