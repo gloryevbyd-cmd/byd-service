@@ -16,6 +16,7 @@ This public repository hosts BYD service-card images and static QR codes for sca
 | Website | PNG | SVG |
 | --- | --- | --- |
 | Rental website homepage | `qr-codes/rental-gloryevgroup-homepage-qr.png` | `qr-codes/rental-gloryevgroup-homepage-qr.svg` |
+| Glory EV Group service booking | `qr-codes/gloryevgroup-service-qr.png` | `qr-codes/gloryevgroup-service-qr.svg` |
 
 ## Service QR code files
 

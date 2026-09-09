@@ -7,6 +7,13 @@
       "targetUrl": "https://rental.gloryevgroup.com.au/",
       "qrSvgPath": "/qr-codes/rental-gloryevgroup-homepage-qr.svg",
       "qrPngPath": "/qr-codes/rental-gloryevgroup-homepage-qr.png"
+    },
+    {
+      "id": "gloryevgroup-service",
+      "title": "Glory EV Group service booking",
+      "targetUrl": "https://www.gloryevgroup.com.au/service",
+      "qrSvgPath": "/qr-codes/gloryevgroup-service-qr.svg",
+      "qrPngPath": "/qr-codes/gloryevgroup-service-qr.png"
     }
   ],
   "services": [
