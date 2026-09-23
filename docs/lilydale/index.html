@@ -4,33 +4,220 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#075bd8">
   <title>BYD Lilydale Service Booking</title>
   <style>
+    :root {
+      color-scheme: light;
+      --navy: #071a3d;
+      --blue: #0766e8;
+      --blue-dark: #004fc8;
+      --muted: #7485a2;
+      --line: #dce6f3;
+    }
+    * { box-sizing: border-box; }
+    html { background: #eef5fd; }
     body {
-      display: grid;
       min-height: 100vh;
       margin: 0;
-      place-items: center;
+      padding: 28px;
       font-family: Arial, Helvetica, sans-serif;
-      color: #0a1b3d;
-      background: #f5f8fc;
+      color: var(--navy);
+      background: radial-gradient(circle at 50% 0%, #fff 0, transparent 40%), linear-gradient(145deg, #eef5fd, #fff 54%, #edf4fc);
     }
-    main { max-width: 34rem; padding: 2rem; text-align: center; }
-    a { color: #075bd8; font-weight: 700; }
+    .card {
+      width: min(960px, 100%);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid rgba(22, 72, 143, .12);
+      border-radius: 42px;
+      background: #fff;
+      box-shadow: 0 24px 72px rgba(21, 53, 101, .18);
+    }
+    .hero {
+      position: relative;
+      height: clamp(330px, 50vw, 520px);
+      overflow: hidden;
+      background: #e4eef9;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .content { padding: clamp(30px, 6vw, 62px); }
+    .service-heading { display: flex; align-items: center; gap: 22px; }
+    .service-icon {
+      flex: 0 0 auto;
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      border: 2px solid #d4e7ff;
+      border-radius: 50%;
+      color: var(--blue);
+      background: #eef6ff;
+    }
+    .service-icon svg { width: 42px; height: 42px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+    }
+    .subtitle { margin-top: 8px; color: var(--muted); font-size: clamp(20px, 2.8vw, 29px); }
+    .details {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 34px;
+      margin: 32px 0;
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .detail-label {
+      margin-bottom: 9px;
+      color: var(--blue-dark);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: .15em;
+    }
+    .detail-value {
+      color: var(--navy);
+      font-size: clamp(20px, 2.6vw, 28px);
+      line-height: 1.35;
+      text-decoration: none;
+    }
+    .booking-panel {
+      padding: clamp(38px, 7vw, 70px) clamp(26px, 6vw, 60px);
+      border: 2px solid #bddcff;
+      border-radius: 34px;
+      text-align: center;
+      background: linear-gradient(145deg, #f3f8ff, #e4f1ff);
+    }
+    .eyebrow { color: var(--blue-dark); font-size: 18px; font-weight: 800; letter-spacing: .18em; }
+    h2 {
+      margin: 42px 0 8px;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -.02em;
+    }
+    .tagline { margin: 0; color: var(--muted); font-size: clamp(22px, 3vw, 31px); }
+    .booking-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      width: min(650px, 100%);
+      min-height: 156px;
+      margin: 48px auto 44px;
+      padding: 24px 34px;
+      border: 2px solid #4da0ff;
+      border-radius: 28px;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(145deg, #2081f4, #0060e8);
+      box-shadow: 0 16px 30px rgba(0, 83, 202, .28), inset 0 1px rgba(255, 255, 255, .35);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .booking-button:hover,
+    .booking-button:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 36px rgba(0, 83, 202, .35), inset 0 1px rgba(255, 255, 255, .35);
+    }
+    .booking-button:active { transform: translateY(1px); }
+    .booking-button svg { flex: 0 0 auto; width: 56px; height: 56px; }
+    .button-text { font-size: clamp(25px, 4vw, 39px); font-weight: 800; }
+    .button-arrow { margin-left: auto; font-size: 48px; font-weight: 300; line-height: 1; }
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: clamp(24px, 7vw, 72px);
+      font-size: clamp(17px, 2.3vw, 22px);
+      font-weight: 700;
+    }
+    .step { display: flex; align-items: center; gap: 13px; }
+    .step-number {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--blue);
+      font-size: 19px;
+    }
+    .help { margin: 34px 0 0; color: var(--muted); font-size: 17px; line-height: 1.45; }
+    .help a { color: var(--blue-dark); }
+    @media (max-width: 640px) {
+      body { padding: 12px; }
+      .card { border-radius: 25px; }
+      .hero { height: 300px; }
+      .content { padding: 28px 20px 24px; }
+      .service-heading { align-items: flex-start; gap: 15px; }
+      .service-icon { width: 58px; height: 58px; }
+      .service-icon svg { width: 32px; height: 32px; }
+      .details { grid-template-columns: 1fr; gap: 22px; margin: 24px 0; padding: 24px 0; }
+      .booking-panel { border-radius: 24px; }
+      h2 { margin-top: 28px; }
+      .booking-button { min-height: 112px; margin: 34px auto; padding: 20px; gap: 14px; border-radius: 22px; }
+      .booking-button svg { width: 42px; height: 42px; }
+      .button-arrow { font-size: 36px; }
+      .steps { flex-direction: column; align-items: flex-start; width: fit-content; margin: 0 auto; gap: 16px; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <h1>BYD Lilydale Service</h1>
-    <p>Opening the current online service booking portal…</p>
-    <p><a id="continue-link" href="#">Continue to booking</a></p>
+  <main class="card">
+    <section class="hero">
+      <img src="https://raw.githubusercontent.com/gloryevbyd-cmd/byd-service/main/i/pakenham.png" alt="BYD authorised service centre">
+    </section>
+    <div class="content">
+      <section class="service-heading">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 11a8.1 8.1 0 1 1-3-6.3"/>
+            <path d="M20 4v7h-7"/>
+          </svg>
+        </div>
+        <div>
+          <h1>BYD Lilydale Service</h1>
+          <div class="subtitle">Service Booking Portal</div>
+        </div>
+      </section>
+      <section class="details" aria-label="Service centre contact details">
+        <div>
+          <div class="detail-label">ADDRESS</div>
+          <div class="detail-value">460 Maroondah Highway, Lilydale VIC 3140</div>
+        </div>
+        <div>
+          <div class="detail-label">PHONE</div>
+          <a class="detail-value" href="tel:+61388081619">(03) 8808 1619</a>
+        </div>
+      </section>
+      <section class="booking-panel">
+        <div class="eyebrow">DIRECT BOOKING PORTAL</div>
+        <h2>Book Your Service Online</h2>
+        <p class="tagline">Fast. Easy. Convenient.</p>
+        <!-- Keep this page URL unchanged. Replace only this href when the dedicated Lilydale booking link becomes available. -->
+        <a class="booking-button" href="https://bayswater-gloryevgroup-serviceaibookingagent.titandms.com.au/booking-agent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="16" rx="2"/>
+            <path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+          </svg>
+          <span class="button-text">Book Your Service</span>
+          <span class="button-arrow" aria-hidden="true">›</span>
+        </a>
+        <div class="steps" aria-label="Booking steps">
+          <div class="step"><span class="step-number">1</span><span>Click the button above</span></div>
+          <div class="step"><span class="step-number">2</span><span>Complete your booking</span></div>
+        </div>
+        <p class="help">If the button doesn’t work, please try a different browser or call <a href="tel:+61388081619">(03) 8808 1619</a>.</p>
+      </section>
+    </div>
   </main>
-  <script>
-    // Keep this page URL unchanged. Update only this destination when the
-    // dedicated BYD Lilydale booking portal becomes available.
-    const destination = "https://bayswater-gloryevgroup-serviceaibookingagent.titandms.com.au/booking-agent";
-    document.getElementById("continue-link").href = destination;
-    window.location.replace(destination);
-  </script>
 </body>
 </html>
