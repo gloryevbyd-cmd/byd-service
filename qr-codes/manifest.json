@@ -48,6 +48,15 @@
       "imagePath": "/i/bayswater.png",
       "qrSvgPath": "/qr-codes/byd-bayswater-service-qr.svg",
       "qrPngPath": "/qr-codes/byd-bayswater-service-qr.png"
+    },
+    {
+      "id": "byd-lilydale-service",
+      "title": "BYD Lilydale Service",
+      "targetUrl": "https://gloryevbyd-cmd.github.io/byd-service/lilydale/",
+      "redirectTargetUrl": "https://bayswater-gloryevgroup-serviceaibookingagent.titandms.com.au/booking-agent",
+      "landingPagePath": "/docs/lilydale/index.html",
+      "qrSvgPath": "/qr-codes/byd-lilydale-service-qr.svg",
+      "qrPngPath": "/qr-codes/byd-lilydale-service-qr.png"
     }
   ]
 }

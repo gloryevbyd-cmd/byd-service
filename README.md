@@ -26,5 +26,9 @@ This public repository hosts BYD service-card images and static QR codes for sca
 | BYD Pakenham Service | `qr-codes/byd-pakenham-service-qr.png` | `qr-codes/byd-pakenham-service-qr.svg` |
 | BYD Ringwood Service | `qr-codes/byd-ringwood-service-qr.png` | `qr-codes/byd-ringwood-service-qr.svg` |
 | BYD Bayswater Service (Panel and Parts) | `qr-codes/byd-bayswater-service-qr.png` | `qr-codes/byd-bayswater-service-qr.svg` |
+| BYD Lilydale Service (dynamic redirect) | `qr-codes/byd-lilydale-service-qr.png` | `qr-codes/byd-lilydale-service-qr.svg` |
+
+The Lilydale QR code points permanently to `https://gloryevbyd-cmd.github.io/byd-service/lilydale/`.
+Its current destination is the Bayswater booking portal. When a dedicated Lilydale booking portal becomes available, update only `docs/lilydale/index.html`; do not regenerate the QR code.
 
 Keep the repository public and keep these image paths unchanged after printing QR codes.

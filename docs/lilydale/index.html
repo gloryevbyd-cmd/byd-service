@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>BYD Lilydale Service Booking</title>
+  <style>
+    body {
+      display: grid;
+      min-height: 100vh;
+      margin: 0;
+      place-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0a1b3d;
+      background: #f5f8fc;
+    }
+    main { max-width: 34rem; padding: 2rem; text-align: center; }
+    a { color: #075bd8; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>BYD Lilydale Service</h1>
+    <p>Opening the current online service booking portal…</p>
+    <p><a id="continue-link" href="#">Continue to booking</a></p>
+  </main>
+  <script>
+    // Keep this page URL unchanged. Update only this destination when the
+    // dedicated BYD Lilydale booking portal becomes available.
+    const destination = "https://bayswater-gloryevgroup-serviceaibookingagent.titandms.com.au/booking-agent";
+    document.getElementById("continue-link").href = destination;
+    window.location.replace(destination);
+  </script>
+</body>
+</html>
