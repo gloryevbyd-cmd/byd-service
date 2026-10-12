@@ -20,8 +20,9 @@
     {
       "id": "byd-cranbourne-service",
       "title": "BYD Cranbourne Service",
-      "targetUrl": "https://raw.githubusercontent.com/Oliver-ats/byd-service/main/i/cranbourne.png",
-      "imagePath": "/i/cranbourne.png",
+      "targetUrl": "https://gloryevbyd-cmd.github.io/byd-service/cranbourne/",
+      "redirectTargetUrl": "https://cranbourne-gloryevgroup-serviceaibookingagent.titandms.com.au/booking-agent",
+      "landingPagePath": "/docs/cranbourne/index.html",
       "qrSvgPath": "/qr-codes/byd-cranbourne-service-qr.svg",
       "qrPngPath": "/qr-codes/byd-cranbourne-service-qr.png"
     },
